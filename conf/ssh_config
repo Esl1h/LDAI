@@ -65,3 +65,7 @@ Host 10.0.1.100
 Host *.prod.intranet
     ProxyCommand ssh -W %h:%p user@10.0.1.100 -i /path/to/my/secret.pem  -o StrictHostKeyChecking=no 
     IdentityFile /path/to/my/secret.pem 
+
+Host github.com
+ HostName github.com
+ IdentityFile ~/.ssh/id_rsa
